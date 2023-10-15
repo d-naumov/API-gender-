@@ -1,0 +1,139 @@
+/* Общие стили для всех страниц */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background: #d9d2f6;
+  color: white;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.li {
+  margin: 20px;
+}
+.h1 {
+  margin: 10px;
+  padding: 10px;
+  border: 2px rgb(32, 8, 246) solid;
+  text-align: center;
+}
+.form {
+  margin-top: 20px;
+  padding: 20px;
+}
+.content {
+  margin: 20px;
+}
+.p {
+  display: flex;
+  margin: 0;
+  padding: 20px;
+}
+
+.loader {
+  display: none; /* Начнем с скрытия лоадера */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Медиа-запрос для адаптивного дизайна на мобильных устройствах */
+@media (max-width: 390px) {
+  .form {
+    margin-top: 10px;
+    padding: 10px;
+  }
+  .content {
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+  }
+  .p {
+    display: flex;
+    margin: -10px;
+  }
+  .loader {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    font-size: 14px;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .header {
+    background: #7ef290;
+    color: white;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  .ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    font-size: 14px;
+  }
+
+  .li {
+    margin: 5px;
+  }
+
+  .h1 {
+    margin: 10px;
+    padding: 10px;
+    border: 2px rgb(246, 87, 8) solid;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .p {
+    padding: 20px;
+    font-size: 14px;
+  }
+}

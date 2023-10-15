@@ -1,0 +1,74 @@
+/* Общие стили для всех страниц */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    background: #d9d2f6;
+    color: white;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+  }
+  
+  .li {
+    margin: 20px;
+  }
+  .h1 {
+    margin: 5px;
+    padding: 5px;
+    border: 2px rgb(32, 8, 246) solid;
+    text-align: center;
+  }
+  .p{
+    margin: 5px;
+    padding: 0px;
+    text-align: center;
+  }
+  
+  /* Дополнительные стили для каждой страницы */
+  /* Медиа-запрос для адаптивного дизайна на мобильных устройствах */
+  @media (max-width: 390px) {
+    .header {
+      background: #7ef290;
+      color: white;
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-around;
+    }
+    .ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 0;
+      font-size: 14px;
+    }
+  
+    .li {
+      margin: 5px;
+    }
+  
+    .h1 {
+      margin: 10px;
+      padding: 10px;
+      border: 2px rgb(246, 87, 8) solid;
+      text-align: center;
+      font-size: 14px;
+    }
+    .p{
+      margin: 5px;
+      padding: 0px;
+      text-align: center;
+    }
+  }

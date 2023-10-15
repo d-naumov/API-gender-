@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Ввод данных</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <ul class="ul">
+          <li class="li"><a href="../index.html">Главная</a></li>
+          <li class="li"><a href="input.html">Ввод данных</a></li>
+          <li class="li">
+            <a href="../clients/clients.html">Информация о клиентах</a>
+          </li>
+          <li class="li"><a href="../contacts/contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1 class="h1">Страница получения пола по имени</h1>
+    <form id="formGenderName" action="" class="form">
+      <input
+        type="text"
+        name="inputName"
+        id="input"
+        placeholder="Введите имя"
+        required
+      />
+      <button type="submit" id="btn">Проверить</button>
+    </form>
+    <div id="loader" class="loader"></div>
+    <div id="content"></div>
+  </body>
+</html>
